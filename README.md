@@ -1,5 +1,4 @@
 # Tricatel
-# Tricatel
 This identification will work in local after you have installed the database using the file 'code/bdd.php'. See more after the identification.
 
 Identification:
