@@ -6,8 +6,9 @@ Identification:
 ->password: 123
 
 IMPORTANT:
+
 FIRST You MUST change variables to login to your localhost into the files : 'code/bdd.php' (creation of datas) AND 'code/config.php' (connexion to the database).
 
-THEN run the 'code/bdd.php' ONCE. Don't open the file again AND don' refresh the page 'code/bdd.php' or it will add datas again and again into the DATABASE.
+THEN run the 'code/bdd.php' ONCE. DON'T open the file again AND DON'T refresh the page 'code/bdd.php' or it will add datas again and again into the DATABASE.
 Once all is installed you will have messages of success. Go the the VIEW page by entering its url in your favorite browser (path: code/view.php).
 
