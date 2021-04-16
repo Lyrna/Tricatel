@@ -1,10 +1,5 @@
 <?php
 
-// $servername = 'sql307.epizy.com';
-// $dbname = 'epiz_28404988_tricatel';
-// $username = 'epiz_28404988';
-// $password = 'Simplon01';
-
 $servername = 'localhost';
 $dbname = 'tricatel';
 $username = 'root';
