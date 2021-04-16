@@ -1,5 +1,10 @@
 <?php
 
+    // $servername = 'sql307.epizy.com';
+    // $dbname = 'epiz_28404988_tricatel';
+    // $username = 'epiz_28404988';
+    // $password = 'Simplon01';
+
     $servername = 'localhost';
     $dbname = 'tricatel';
     $username = 'root';
@@ -67,7 +72,7 @@
         'plat',
         'Fromage fondu avec plateau de charcuterie',
         'Europe',
-        'normal')";
+        'flexitarien')";
 
         $dbco->exec($plat_1);
 
@@ -139,7 +144,7 @@
         'plat',
         'Frites dorées au four accompagnées du fidèle Hamburger',
         'Amérique',
-        'normal')";
+        'flexitarien')";
 
         $dbco->exec($plat_5);
 
@@ -211,9 +216,171 @@
         'plat',
         'Des tomates fraîches et une farce du traiteur qui constituent un plat hivernal à manger en toute saison',
         'Europe',
-        'normal')";
+        'flexitarien')";
 
         $dbco->exec($plat_9);
+
+        $plat_10 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Gâteau au chocolat',
+        '../assets/img/plats/chocolat.jpg',
+        'dessert',
+        'Gâteau au chocolat accompagnée de son lit de fraises',
+        'Europe',
+        'végétarien')";
+
+        $dbco->exec($plat_10);
+
+        $plat_11 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Confiseries asiatiques',
+        '../assets/img/plats/confiserie_asiatique.jpg',
+        'dessert',
+        'Confiseries asiatiques à goûter pour les plus curieux',
+        'Asie',
+        'flexitarien')";
+
+        $dbco->exec($plat_11);
+
+        $plat_12 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Foie gras',
+        '../assets/img/plats/foiegras.jpg',
+        'entrée',
+        'Une luxueuse entrée à prix abordable pour les amateurs de foie gras',
+        'Europe',
+        'flexitarien')";
+
+        $dbco->exec($plat_12);
+
+        $plat_13 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Curiosité asiatique',
+        '../assets/img/plats/plat_asie.jpg',
+        'plat',
+        'Un plat de légumes frais pour un été au top',
+        'Asie',
+        'flexitarien')";
+
+        $dbco->exec($plat_13);
+
+        $plat_14 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Gâteau et gelée de fraise',
+        '../assets/img/plats/dessert_americain.jpg',
+        'dessert',
+        'Un dessert américain pour le plaisir de tous',
+        'Amérique',
+        'flexitarien')";
+
+        $dbco->exec($plat_14);
+
+        $plat_15 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Dessert asiatique',
+        '../assets/img/plats/breakfast.jpg',
+        'dessert',
+        'Un dessert américain végétarien chaud et savoureux',
+        'Asie',
+        'végétarien')";
+
+        $dbco->exec($plat_15);
+
+        $plat_16 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Apple Pie',
+        '../assets/img/plats/applepie.jpg',
+        'dessert',
+        'Le dessert américain renommé par excellence, un classique à ne pas rater',
+        'Amérique',
+        'végétarien')";
+
+        $dbco->exec($plat_16);
+
+        $plat_17 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Malvapoeding',
+        '../assets/img/plats/malvapoeding.jpg',
+        'dessert',
+        'Un dessert africain gourmand, avec de la glace vanille et des abricots',
+        'Afrique',
+        'végétarien')";
+
+        $dbco->exec($plat_17);
+
+        $plat_18 = "INSERT IGNORE INTO plats(
+        nom_plat,
+        photo_plat,
+        type_plat,
+        description_plat,
+        continent_origine,
+        regime_alimentaire)
+
+        VALUES(
+        'Roly Poly',
+        '../assets/img/plats/rolypoly.jpg',
+        'dessert',
+        'Un dessert africain gourmand fourré aux abricots',
+        'Afrique',
+        'flexitarien')";
+
+        $dbco->exec($plat_18);
 
         //creation of the admin
 

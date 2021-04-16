@@ -14,6 +14,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/c70a4c5665.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" sizes="60x60" href="../assets/img/logo/favicon.png">
 	<link rel="stylesheet" href="../assets/css/style.css">
 	<title>Tricatel - Admin - Editer/Supprimer</title>
 </head>
@@ -21,7 +22,7 @@
 
 <header class="header-admin">
 	<div>
-		<div class="admin-mode-section"><h1>Tricatel</h1></a></div>
+		<div class="admin-mode-section"><img src="../assets/img/logo/logo.png" height="60px" width="60px" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></a></div>
 	</div>
 	<div class="admin-mode">
 		<div class="admin-mode-section"><a href="admin.php" class="link-edit"><i class="fas fa-pen-fancy fa-utensils-2"></i><span class="hidden">Création</span></a></div>
@@ -66,7 +67,7 @@
 	  <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
 	    <div class="card">
 	      <div>
-	        <h3><?php echo $row['nom_plat'] ?></h3>
+	        <h3 class="title-plat"><?php echo $row['nom_plat'] ?></h3>
 	        <?php echo "<img src=".$row['photo_plat']." alt='image dédiée au plat associé' class='img_plat'/>"; ?>
 	        <?php
 	        echo "<a href=edit_delete.php?edit=" . $row['id_plat'] . ">
@@ -157,7 +158,6 @@
 					<div>
 						<select name="regime_alimentaire" class="crud" id="regime_alimentaire" required>
 			              <option value="<?php echo $regime_alimentaire; ?>">--<?php echo $regime_alimentaire; ?>--</option>
-			              <option value="normal">Normal</option>
 			              <option value="flexitarien">Flexitarien</option>
 			              <option value="végétarien">Végétarien</option>
 			          </select>
