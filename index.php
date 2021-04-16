@@ -14,7 +14,7 @@
 
 <header class="header-admin header_absolute">
     <div>
-    <div class="admin-mode-section"><img src="assets/img/logo/logo.png" height="70px" width="70px" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></a></div>
+    <div class="admin-mode-section"><img src="assets/img/logo/logo.png" height="70" width="70" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></div>
   </div>
   <div class="admin-mode">
     <div class="admin-mode-section"><a href="code/view.php" class="link-edit"><i class="fas fa-eye fa-utensils-2"></i><span class="hidden">Voir le site</span></a></div>

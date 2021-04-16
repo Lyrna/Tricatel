@@ -22,7 +22,7 @@
 
 <header class="header-admin">
 	<div>
-		<div class="admin-mode-section"><img src="../assets/img/logo/logo.png" height="60px" width="60px" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></a></div>
+		<div class="admin-mode-section"><img src="../assets/img/logo/logo.png" height="60" width="60" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></a></div>
 	</div>
 	<div class="admin-mode">
 		<div class="admin-mode-section"><a href="admin.php" class="link-edit"><i class="fas fa-pen-fancy fa-utensils-2"></i><span class="hidden">Création</span></a></div>

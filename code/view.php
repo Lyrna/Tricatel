@@ -1,9 +1,22 @@
+<?php session_start(); ?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tricatel</title>
+  <script src="https://kit.fontawesome.com/c70a4c5665.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="30x30" href="../assets/img/logo/favicon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
 <?php
-  session_start();
   if(isset($_SESSION['auth'])){
   echo '<header class="header-admin m-2">
   <div>
-    <div class="admin-mode-section"><img src="../assets/img/logo/logo.png" height="100px" width="100px" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></a></div>
+    <div class="admin-mode-section"><img src="../assets/img/logo/logo.png" height="100" width="100" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></div>
   </div>
   <div class="admin-mode">
     <div class="admin-mode-section"><a href="admin.php" class="link-edit"><i class="fas fa-chalkboard-teacher fa-utensils-2"></i><span class="hidden">Tableau de bord</span></a></div>
@@ -13,7 +26,7 @@
   } else{
     echo '<header class="header-admin m-2">
   <div>
-    <div class="admin-mode-section"><img src="../assets/img/logo/logo.png" height="100px" width="100px" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></a></div>
+    <div class="admin-mode-section"><img src="../assets/img/logo/logo.png" height="100" width="100" alt="logo Tricatel sur fond noir, orange et rouge"/><h1 class="grey">Tricatel</h1></div>
   </div>
   <div class="admin-mode">
     <div class="admin-mode-section"><a href="../index.php" class="link-edit"><i class="fas fa-sign-in-alt fa-utensils-2"></i><span class="hidden">Connexion</span></a></div>
@@ -21,18 +34,6 @@
 </header>';
   }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tricatel</title>
-  <script src="https://kit.fontawesome.com/c70a4c5665.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" sizes="60x60" href="../assets/img/logo/favicon.png">
-  <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
 
   <?php require_once "config.php"?>
   <?php require_once "sql.php"?>
