@@ -145,7 +145,8 @@ div.img_index{
 	}
 
 	#button_container{
-clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 51% 96%, 50% 100%, 49% 97%, 0 97%);	}
+		clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 51% 96%, 50% 100%, 49% 97%, 0 97%);	
+	}
 }
 
 @media(max-width: 1250px){
@@ -357,7 +358,7 @@ label{
 
 .required{
 	color: #D24526;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 select{
@@ -695,7 +696,7 @@ div.card{
 	align-items: center;
 	flex-direction: column;
 	color: #010101;
-	padding: 20px 30px 60px 30px;
+	padding: 20px 30px 90px 30px;
 	width: 100%;
 	margin: 0;
 	margin-bottom: 30px;

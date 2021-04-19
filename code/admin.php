@@ -64,10 +64,10 @@
 				<!--formulaire de création de profil-->
 				<div class="form-group">
 					<div class="input">
-						<label for="nom_plat">Nom du plat <span class="required">*</span></label>
+						<label for="nom_plat">Nom du plat <span class="required">| max: 30 caractères *</span></label>
 					</div>
 					<div>
-						<input type="text" name="nom_plat" required>
+						<input type="text" maxlength="30" name="nom_plat" required>
 					</div>
 				</div>
 				<div class="form-group">
@@ -111,18 +111,18 @@
 				</div>
 				<div class="form-group">
 					<div class="input">
-						<label for="text">Photo du plat (max : 500ko) <span class="required">*</span></label>
+						<label for="photo_plat">Photo du plat <span class="required">| max : 500ko *</span></label>
 					</div>
 					<div>
-						<input type="file" name="photo_plat" required>
+						<input type="file" name="photo_plat" id="photo_plat" required>
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="input">
-						<label for="text">Description <span class="required">*</span></label>
+						<label for="description_plat">Description <span class="required">*</span></label>
 					</div>
 					<div>
-						<input type="text" name="description_plat" required>
+						<input type="text" name="description_plat" id="description_plat" required>
 					</div>
 				</div>
 				<div class="form-footer">

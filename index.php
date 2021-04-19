@@ -23,7 +23,7 @@
 
 <div class="container container_index">
   <div class="login-form">
-    <form action="" method="POST">
+    <form action="index.php" method="POST">
       <h2 class="black">Connexion</h2>
       <!--display errors-->
       <?php if(!empty($errors)): ?>
@@ -39,7 +39,7 @@
           <label for="name_admin">Identifiant <span class="required">*</span></label>
         </div>
         <div>
-          <input type="text" name="name_admin" required>
+          <input type="text" name="name_admin" id="name_admin" required>
         </div>
       </div>
       <div class="form-group">
@@ -47,7 +47,7 @@
           <label for="password">Mot de passe <span class="required">*</span></label>
         </div>
         <div>
-          <input type="password" name="password" required>
+          <input type="password" name="password" id="password" required>
         </div>
       </div>
       <button type="submit" class="subscribe-index">Se connecter</button>

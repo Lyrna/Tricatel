@@ -118,10 +118,10 @@
 				<input type="hidden" name="id_plat" value="<?php echo $id; ?>">
 				<div class="form-group">
 					<div class="input">
-						<label for="nom_plat">Nom du plat <span class="required">*</span></label>
+						<label for="nom_plat">Nom du plat <span class="required">| max: 30 caractères *</span></label>
 					</div>
 					<div>
-						<input type="text" name="nom_plat" value="<?php echo $nom_plat; ?>" required>
+						<input type="text" maxlength="30" name="nom_plat" id="nom_plat" value="<?php echo $nom_plat; ?>" required>
 					</div>
 				</div>
 				<div class="form-group">
@@ -129,7 +129,7 @@
 						<label for="type_plat">Type de plat <span class="required">*</span></label>
 					</div>
 					<div>
-						<select name="type_plat"class="crud" id="type_plat" required>
+						<select name="type_plat" class="crud" id="type_plat" required>
 				            <option value="<?php echo $type_plat; ?>">--<?php echo $type_plat; ?>--</option>
 				            <option value="entrée">Entrée</option>
 				            <option value="plat">Plat</option>
@@ -165,19 +165,19 @@
 				</div>
 				<div class="form-group">
 					<div class="input">
-						<label for="regime_alimentaire">Photo du plat (max 500ko) <span class="required">*</span></label>
+						<label for="photo_plat">Photo du plat <span class="required">| max 500ko *</span></label>
 					</div>
 					<div>
 						<img src="<?php echo $photo_plat; ?>" alt="photo_plat" class="img_plat_crud">
-						<input type="file" name="photo_plat" value="<?php echo $photo_plat; ?>">
+						<input type="file" name="photo_plat" id="photo_plat" value="<?php echo $photo_plat; ?>">
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="input">
-						<label for="text">Description <span class="required">*</span></label>
+						<label for="description_plat">Description <span class="required">*</span></label>
 					</div>
 					<div>
-						<input type="text" name="description_plat" value="<?php echo $description_plat; ?>" required>
+						<input type="text" name="description_plat" id="description_plat" value="<?php echo $description_plat; ?>" required>
 					</div>
 				</div>
 				<div class="form-footer">

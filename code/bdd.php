@@ -1,9 +1,9 @@
 <?php
 
-    $servername = 'localhost';
-    $dbname = 'tricatel';
-    $username = 'root';
-    $password = 'Simplon01';
+$servername = 'localhost';
+$dbname = 'tricatel';
+$username = 'root';
+$password = 'Simplon01';
 
     try{ //creation of the database
 
